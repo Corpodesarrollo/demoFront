@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="AUTHOR" content="" />
+  <meta name="COPYRIGHT" content="Desarrollado para MinSalud" />
+  <meta name="DESCRIPTION" content="Formulario de Aplicación" />
+  <meta name="KEYWORDS" content="" />
+  <meta name="VIEWPORT" content="width=device-width, initial-scale=1, user-scalable=0" />
+  <link rel="icon" href="data:,">
+
+  <script defer>
+  var ApplicationName = "PROJECT/APP"; 
+  var SetFormsCssClassNamesIsDisabled = true;
+  </script>
+  
+  <script defer src="<%= VUE_APP_STATICURL %>/JS_Basic"></script>
+  
+  <link rel="stylesheet" href="<%= VUE_APP_STATICURL %>/CSS_Basic">
+  <link rel="stylesheet" href="<%= VUE_APP_STATICURL %>/ElementPlus_CSS_Basic">
+</head>
+
+<body>
+  <noscript>
+    <strong>Frontend does not work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+
+  <div id="divLoadingMessage">
+    <div>
+      <i class="mdi mdi-spin mdi-loading"></i>
+    </div>
+  </div>
+  <div id="divMasterContainer">
+    <div id="divMasterContents">
+      <div id="app"></div>
+    </div>
+  </div>
+  
+  <script src="<%= VUE_APP_SSO_API_URL %>/GetJSUserVariables"></script>
+  <script src="<%= VUE_APP_STATICURL %>/../Js/Lib/VueUtils.js"></script>
+
+</body>
+
+</html>
