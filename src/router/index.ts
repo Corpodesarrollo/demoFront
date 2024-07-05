@@ -35,7 +35,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/reporte-consulta-unificada-at',
     meta: {
       title: "Reporte Consulta Unificada AT",
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () => import(/* webpackChunkName: "reporteUnificadoIBCReserva" */ '../views/reporteConsultaUnificadaAT/ViewReporteConsultaUnificadaAT.vue')
   }
